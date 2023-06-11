@@ -1,0 +1,47 @@
+.flexWrap {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+
+.wrap {
+    max-width: 800px;
+}
+
+.mapArea{
+    // マップの縦幅の設定は、map.module.scssの__contentAreaに設定している
+    width: calc(100% - 382px);
+}
+
+.interactionArea{
+    width: 382px;
+    // mainモジュールに指定しているoverflow-y: scrollはheightが対象要素に指定できていないと機能しない
+    height:calc(100vh - 70px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 834px){
+    .flexWrap{
+        display: block;
+        position: relative;
+    }
+    .interactionArea{
+        background-color: #FFF;
+        display: block;
+        width: 100%;
+        height: 50vh;
+        z-index: 120000;
+        // height: 2000px;
+    }
+    .mapArea{
+        width: 100%;
+        // height: 300px;
+    }
+    .newEdit{
+    //     z-index: 101000;
+        position: absolute;
+        top: 1000px;
+    }
+}

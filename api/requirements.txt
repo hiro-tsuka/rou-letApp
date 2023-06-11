@@ -1,0 +1,8 @@
+Django==3.2.12
+djangorestframework
+django-filter
+psycopg2
+pyjwt
+django-cors-headers
+djangorestframework-api-key==2.2.0
+apscheduler

@@ -1,0 +1,81 @@
+.additionButton {
+        border: 2px solid #fc4484;
+        background-color: #fc4484;
+        color: #fff;
+        border-radius: 100px;
+        width: 160px;
+        padding: 5px;
+        transition: all 0.5s 0s ease;
+    &:hover {
+        border: 2px solid #fc4484;
+        color: #fc4484;
+        background-color: #fff;
+    }
+}
+
+.mobileAdditionButton {
+    border: 2px solid #fc4484;
+    background-color: #fc4484;
+    color: #fff;
+    border-radius: 4px;
+    width: 48px;
+    padding: 5px;
+    transition: all 0.5s 0s ease;
+&:hover {
+    border: 2px solid #fc4484;
+    color: #fc4484;
+    background-color: #fff;
+}
+}
+
+.logo {
+    width: 35px;
+}
+
+.headerWrap {
+    height: 70px;
+    box-sizing: border-box;
+    border-bottom: 4px solid #39679b;
+
+}
+
+.headerFlex {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    padding: calc(68px / 5) 40px;
+    // width: 800px;
+    // margin: 0 auto;
+}
+
+.headerContent {
+    & div {
+        display: inline;
+    }
+}
+
+.markerExample {
+
+    & div {
+        margin-right: 40px;
+    }
+
+    & img {
+        display: inline;
+        width: 20px;
+    }
+
+    & p {
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    // .headerContent{
+    //     flex-direction: column-reverse;
+    // }
+    .markerExample{
+        display: none !important;
+    }
+    
+}

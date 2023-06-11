@@ -1,0 +1,45 @@
+version: '3.7'
+
+services: 
+  db:
+    image: postgres:14
+    container_name: placeappdb
+    ports:
+      - "5031:5432"
+    volumes:
+      - placeapp_volume:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: place_app
+  api:
+    build:
+      context: ./api/
+      dockerfile: Dockerfile
+    container_name: placeappapi
+    ports:
+     - "8031:8000"
+    volumes:
+     - ./api/backend:/usr/src/app
+    tty: true
+    stdin_open: true
+    command: >
+      bash -c "python manage.py migrate &&
+             python manage.py runserver 0.0.0.0:8000 && /bin/bash" 
+    environment:
+     - SHELL = /bin/bash
+     - CHOKIDAR_USEPOLLING=true
+    depends_on:
+      - db
+  front: 
+    build:
+      context: ./front/
+      dockerfile: Dockerfile
+    volumes:
+      - ./front/app:/usr/src/app
+    command: sh -c "yarn install && yarn dev && bin/sh"
+    ports:
+      - "3031:3000"
+volumes:
+  placeapp_volume:
+  mysql-db:
+    driver: local

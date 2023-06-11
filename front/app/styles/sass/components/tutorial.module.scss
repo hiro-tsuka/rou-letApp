@@ -1,0 +1,27 @@
+.tutorial {
+    padding:20px 10px;
+
+    article{
+        padding: 5px 10px;
+        margin: auto;
+        background-color: #eff6ff;
+    }
+
+    h1{
+        display: block;
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    h2{
+        font-size:20px;
+    }
+    &__img{
+        display: block;
+        margin: auto;
+        width: 140px;
+    }
+    &__contentsWrap{
+        margin-bottom: 50px;
+    }
+
+}

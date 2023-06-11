@@ -1,0 +1,107 @@
+.newEdit {
+    font-weight: normal;
+    width: 387px;
+    padding: 20px 10px;
+    margin: 0 auto;
+
+    input[type="text"] {
+        width: 80%;
+        border: 1.5px solid lightgray;
+        border-radius: 3px;
+        box-shadow: 0px 0px 2px 1px #ccc inset;
+
+        &:focus {
+            outline: none;
+            background-color: #DCEDC8;
+            box-shadow: 0px 0px 3px 0px #00bfff;
+        }
+    }
+
+    input[type=checkbox] {
+        transform: scale(1.5);
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    input[type="time"] {
+        margin-left: 30px;
+    }
+
+    input[type="radio"] {
+        transform: scale(1.5);
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+
+    &__table {
+        margin: 20px 0px 20px 26px;
+
+        td {
+            height: 30px;
+        }
+    }
+
+    &__title {
+        background-color: #eff6ff;
+        font-size: 20px;
+        color: #39679b;
+        margin-left: 4px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        line-height: 26px;
+        padding: 8px;
+        width: 92%;
+        height: 40px;
+    }
+
+    &__input {
+        font-weight: normal;
+        margin-bottom: 30px;
+    }
+
+    &__radioCategory {
+        margin-left: 36px;
+    }
+
+    &__radioStyle {
+        margin-left: 168px;
+    }
+
+    &__check {
+        margin-left: 72px;
+    }
+
+    &__checkTime {
+        margin-left: 86px;
+    }
+
+    &__time{
+        margin-bottom: 5px;
+    }
+
+    &__submit {
+        height: 44px;
+        display: block;
+        margin: 20px auto;
+        width: 80px;
+        border-radius: 4px;
+        background-color: #fff;
+        border: 2px solid #39679b;
+        color: #39679b;
+        font-size: 14px;
+        font-weight: bold;
+        transition: all 0.5s 0s ease;
+
+        &:hover {
+            background-color: #39679b;
+            color: #fff
+        }
+
+    }
+
+
+}

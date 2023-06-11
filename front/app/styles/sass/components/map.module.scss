@@ -1,0 +1,32 @@
+.map{
+    position: "relative";
+
+    &__contentArea{
+        // mainモジュールに指定しているoverflow-y: scrollはheightが対象要素に指定できていないと機能しない
+        height:calc(100vh - 70px);
+        width: 100%;
+    }
+
+    &__currentButton{
+        position: absolute; 
+        top: 92px; 
+        left: 12px; 
+        z-index: 100000; 
+        width: 30px; 
+        height:30px; 
+        padding:1px 1px; 
+        border: none; 
+        background-color: #fff; 
+        border-radius: 2px; 
+        box-shadow: 0px 0px 2px 1px gray;
+        & img{
+            width: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 834px){
+    .map__contentArea{
+        height: 50vh;
+    } 
+}
