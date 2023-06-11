@@ -1,5 +1,5 @@
 # サイト概要
-![logo](https://github.com/hiro-tsuka/rou-letApp/front/app/public/Logo.png)
+![Logo](https://github.com/hiro-tsuka/rou-letApp/assets/59140769/38ad9c1f-28ce-4910-9833-77d88ef63a84)
 サイトURL：  
 行ったことのあるトイレの情報を共有できるマップアプリです。
 制作者がライブに行ったときにトイレの大行列で不便な思いをしたことが開発のきっかけとなったアプリです。
