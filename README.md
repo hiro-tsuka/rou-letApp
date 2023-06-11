@@ -1,6 +1,6 @@
 # サイト概要
 ![Logo](https://github.com/hiro-tsuka/rou-letApp/assets/59140769/38ad9c1f-28ce-4910-9833-77d88ef63a84)
-サイトURL：  
+サイトURL：https://rou-let.com/  
 行ったことのあるトイレの情報を共有できるマップアプリです。
 制作者がライブに行ったときにトイレの大行列で不便な思いをしたことが開発のきっかけとなったアプリです。
 「ライブなどのイベントでトイレの行列を避けたい、少し遠くても他のトイレに行きたい時」
@@ -10,14 +10,11 @@
 # 使用技術  
 ### フロントエンド  
 React/Next.js
-採用理由：本アプリはトイレに行きたくなった時とっさに利用するシーンが多くなると予測し、next.jsのプリレンダリングでレスポンスを高速化しました。それにより、すばやく詳細情報を確認ができ、かつ少しでもトイレ情報の入力の協力いただけるように表示速度のストレスの軽減を目的に使用しました。  
 ### バックエンド  
 DjangoRestFramework  
-採用理由：postmanなどのサードパーティツールを使わなくても管理画面からデータの編集が行えるため使用しました。  
 ### インフラ  
-Docker  
-以前自主製作のsnsサイトでvagrant・virtualBox環境からHerokuにデプロイする際に苦労したので、デプロイのしやすさという観点からDockerを採用しました。  
-  
+Docker   
+
 ## 機能一覧
 ●トップ画面  
 ![firsttview](https://github.com/hiro-tsuka/rou-letApp/assets/59140769/6406ff19-a572-4053-9245-ac6c26089480)
@@ -36,8 +33,10 @@ Docker
 <br/>
 <br/>
 ●現在地ボタン  
-![current](https://github.com/hiro-tsuka/rou-letApp/assets/59140769/b079b838-4060-4620-b555-43c2b92d156c)
+![current](https://github.com/hiro-tsuka/rou-letApp/assets/59140769/b079b838-4060-4620-b555-43c2b92d156c)  
+現在地ボタンで現在地のピンに戻ることができます。
 <br/>
 <br/>
 ●レビュー機能
-![review](https://github.com/hiro-tsuka/rou-letApp/assets/59140769/716ae89b-8cc4-4a98-b03b-ce9caee240ba)
+![review](https://github.com/hiro-tsuka/rou-letApp/assets/59140769/716ae89b-8cc4-4a98-b03b-ce9caee240ba)  
+星による数値評価と、コメントを投稿することができます。  
